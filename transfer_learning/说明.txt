@@ -1,0 +1,34 @@
+vgg16.py--------感谢：https://cosx.org/2017/10/transfer-learning/
+
+data_stat_produce.py--------统计双贝塔衰变事件并产生所需大小的数据，格式：数组或jpg
+
+feature_extraction.py--------用vgg16对上面产生数据提取特征并保存输出
+
+transfer_result.py--------对特征提取后的输出用后续神经网络结构训练。
+
+
+
+
+自定义结构：如上，自定义的后接卷积层，全连接层和上述以及cnn-1一致
+poo3-poo5:与上文一致，尝试数据集使用迁移学习的可行性
+
+
+文件中：
+val_train_pool i.png-------- loss、 ROC曲线
+statistics_3.png--------对测试集输出的可视化
+
+submission.csv--------预测测试集输出及相应标签
+...-ckpt-...--------模型参数保存（太大已删除）
+Distribution_total.png--------对测试集输出的可视化
+
+标准-VGG输出：使用VGG16卷积层相同结构（前半部分冻结，后半部分训练）
+pool2-pool5:分别对应特征提取时冻结的卷积层输出，文件中是对应输出后续训练后的结果。
+
+文件中：
+val_train_pool i.png-------- loss、 ROC曲线
+
+
+submission.csv--------预测测试集输出及相应标签
+...-ckpt-...--------模型参数保存（太大已删除）
+Distribution_total_2.png--------对测试集输出的可视化
+

@@ -1,0 +1,13 @@
+creat_input.py--------处理双贝塔衰变数据，统计并输出相应大小的数据，作为模型的输入
+cnn-1-main.py--------构造的模型
+neutral_network_structure.py --------感谢：Weiguang Ding ，https://github.com/gwding/draw_convnet/blob/master/draw_convnet.py
+
+
+
+loss.png-------- loss
+
+roc.png -------- ROC曲线
+statistics_3.png--------对测试集输出的可视化
+
+submission.csv--------预测测试集输出（忘记把Event_ID保存了，cnn-1-main.py可保存）
+beta_try--------模型参数保存
